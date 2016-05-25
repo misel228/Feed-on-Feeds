@@ -1041,8 +1041,6 @@ function fof_db_items_purge_list($feed_id, $purge_days, $purge_grace = 0, $ignor
 		" )";
 	}
 
-	$query .= " ORDER BY i.item_updated";
-
 	if (!empty($purge_grace)) {
 		/*  We need to include a LIMIT of as many as the driver can return,
 		because some drivers don't understand OFFSET without a LIMIT.
