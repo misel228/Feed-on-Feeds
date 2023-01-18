@@ -17,7 +17,7 @@ include_once 'fof-main.php';
 fof_set_content_type();
 
 /* quell warnings */
-function fof_sidebar_get_key_($array, $key, $default = NULL) {
+function fof_sidebar_get_key_($array, $key, $default = '') {
 	if (!empty($array[$key])) {
 		return $array[$key];
 	}
